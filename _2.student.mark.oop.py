@@ -1,5 +1,4 @@
 #Student mark management
-#list#
 Students=[]
 StudentID=[]
 Courses=[]
@@ -8,14 +7,14 @@ Mark=[]
 
 #Students info#
 class  Students:
-    def __init__(self,name,id,DoB):
+    def __init__(self,name,ID,DoB):
         self.name=name
-        self.id=id
+        self.ID=ID
         self.DoB=DoB
         Students.append(self) 
-        StudentID.append(self.id)
+        StudentID.append(self.ID)
     def describe(self):
-        print(["name:"],self.name, ["id:"],self.id, ["DoB:"],self.DoB)
+        print(["name:"],self.name, ["ID:"],self.ID, ["DoB:"],self.DoB)
     def input_number_student():
          StudentNumber=int(input("Please enter the numbers of student:"))
          return StudentNumber
@@ -27,7 +26,7 @@ class  Students:
          id=input()
          print("Enter date of birth:")
          DoB=input()
-         Student(name,id,DoB)
+         Student(name,ID,DoB)
 
 #Courses info#
 class Courses:
@@ -55,7 +54,7 @@ class mark:
         self.courseID=courseID
         self.ID=ID
         self.marks=marks
-        Mark.append(self)
+        mark.append(self)
     def describe(self):
         print(["CoursesID:"],self.courseID, ["StudentID:"],self.ID, ["mark:"],self.marks)
     def inputMark():
