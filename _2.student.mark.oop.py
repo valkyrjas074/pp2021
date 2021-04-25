@@ -31,13 +31,13 @@ class  Students:
 
 #Courses info#
 class Courses:
-    def __init__(self,coursename,courseid):
+    def __init__(self,coursename,courseID):
         self.coursename=coursename
-        self.courseid=courseid
+        self.courseID=courseID
         Courses.append(self)
-        CoursesID.append(self.courseid)
+        CoursesID.append(self.courseID)
     def describe(self):
-        print(["coursename:"],self.coursename, ["courseid:"],self.courseid)
+        print(["coursename:"],self.coursename, ["courseid:"],self.courseID)
     def input_number_courses():
         coursenumber=int(input("Enter the numbers of course:"))
         return coursenumber
@@ -46,18 +46,18 @@ class Courses:
          print("Enter course name:")
          coursename=input()
          print("Enter CoursesID:")
-         courseid=input()
-         Course(coursename,courseid)
+         courseID=input()
+         Course(coursename,courseID)
 
 #Student mark#
 class mark:
-    def __init__(self,courseid,id,marks):
-        self.courseid=courseid
-        self.id=id
+    def __init__(self,courseID,ID,marks):
+        self.courseID=courseID
+        self.ID=ID
         self.marks=marks
         Mark.append(self)
     def describe(self):
-        print(["CoursesID:"],self.courseid, ["StudentID:"],self.id, ["mark:"],self.marks)
+        print(["CoursesID:"],self.courseID, ["StudentID:"],self.ID, ["mark:"],self.marks)
     def inputMark():
          print("Enter CoursesID")
          courseid=input()
@@ -69,7 +69,7 @@ class mark:
                  marks=float(input())
              else:
                  return 0
-         mark(courseid,id,marks)
+         mark(courseID,ID,marks)
 
 #Show student marks#
     def ShowCourses():
