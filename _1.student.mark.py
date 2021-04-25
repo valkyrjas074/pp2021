@@ -1,4 +1,4 @@
-Students=[]
+Student=[]
 StudentID=[]
 Course=[]
 CourseID=[]
@@ -7,42 +7,41 @@ def input_student_number():
     i = int(input("Enter the numbers of student:"))
     return i
 
-def addStudent():
-    print("Add a new student to the course:")
-    info = {
-        'StudentName': '',
-        'StudentID': '',
+def input_Student():
+    print("Input student information:")
+    self = {
+        'name': '',
+        'ID': '',
         'DoB': ''
     }
-    print("Enter StudentName:")
-    info['StudentName'] = input()
-    return StudentName
-    print("Enter StudentID:")
-    return StudentID
-    info['StudentID'] = id = input()
+    print("Enter student name:")
+    self['name'] = input()
+    return name
+    print("Enter student ID:")
+    return ID
+    self['ID'] = ID = input()
     print("Enter date of birth:")
     return DoB
-    info['DoB'] = input()
-    Students.append(info)
-    StudentID.append(id)
+    self['DoB'] = input()
+    Student.append(self)
+    StudentID.append(ID)
 
 def input_number_Course():
     j = int(input("Enter the numbers of course:"))
     return j
 
-def addCourse():
-    print("Add a course:")
-    infoCourse = {
+def input_Course():
+    print("Input course information:")
+    CourseInfo = {
         'CourseName': '',
         'CourseID': ''
     }
-    print("Enter CourseName:")
-    infoCourse['CourseName'] = input()
-    print("Enter CourseID:")
-    infoCourse['CourseID'] = CourseID = input()
-    Course.append(infoCourse)
+    print("Enter name of the course:")
+    CourseInfo['CourseName'] = input()
+    print("Enter course ID:")
+    CourseInfo['CourseID'] = CourseID = input()
+    Course.append(CourseInfo)
     CourseID.append(CourseID)
-
 def Mark():
     print("Enter student Mark:")
     infoMark = {
